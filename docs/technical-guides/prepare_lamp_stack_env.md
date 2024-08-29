@@ -1,6 +1,8 @@
 # Preparing a LAMP Stack Environment for Question2Answer or WordPress Hosting
 
-This guide provides step-by-step instructions for setting up a testing environment on Azure using an Ubuntu virtual machine (VM) on Azure, installing essential software, and configuring the environment for hosting a Question2Answer (Q2A) or WordPress application. By following this guide, you will create a fully functional server environment, ready to deploy and manage your Q2A or WordPress site efficiently.
+This guide provides step-by-step instructions for setting up a testing environment on Azure using an Ubuntu virtual machine (VM) on Azure, installing essential software, and configuring the environment for hosting a Question2Answer (Q2A) or WordPress application. 
+
+By following this guide, you will create a fully functional server environment, ready to deploy and manage your Q2A or WordPress site efficiently.
 
 ## 1. Create a Resource Group
 
