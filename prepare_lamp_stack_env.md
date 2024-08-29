@@ -173,6 +173,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'YourSecu
 exit
 ```
 
-Replace 'YourSecurePassword' with a strong password of your choice. This step is crucial for securing your MySQL database.
+Replace `YourSecurePassword` with a strong password of your choice. This step is crucial for securing your MySQL database.
 
 Following these steps will set up an environment for deploying your Question2Answer or WordPress site on Azure. Be sure to adjust the commands and configurations to meet your specific requirements.
