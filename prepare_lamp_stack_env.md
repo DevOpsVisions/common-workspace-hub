@@ -1,4 +1,4 @@
-# Preparing a LAMP Stack Environment for Q2Answer or WordPress Hosting
+# Preparing a LAMP Stack Environment for Question2Answer or WordPress Hosting
 
 This guide provides step-by-step instructions for setting up a testing environment on Azure using an Ubuntu virtual machine (VM) on Azure, installing essential software, and configuring the environment for hosting a Question2Answer (Q2A) or WordPress application. By following this guide, you will create a fully functional server environment, ready to deploy and manage your Q2A or WordPress site efficiently.
 
@@ -176,3 +176,49 @@ exit
 Replace `YourSecurePassword` with a strong password of your choice. This step is crucial for securing your MySQL database.
 
 Following these steps will set up an environment for deploying your Question2Answer or WordPress site on Azure. Be sure to adjust the commands and configurations to meet your specific requirements.
+
+## Troubleshooting  
+
+If you encounter errors during installation on a Linux machine, try running the following commands to ensure your package lists are updated and all installed packages are current:
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+- To copy all files to the HTML root folder:
+
+```bash
+sudo cp -a /home/mradwan/Downloads/learn.backup.ex/public_html/. /var/www/html
+```
+
+- To remove a non-empty folder:
+
+```bash
+sudo rm -r /FolderName/
+```
+
+- To remove all files inside a specific folder:
+
+```bash
+sudo rm -r /FolderName/*
+```
+
+- To edit the .htaccess file:
+
+```bash
+sudo nano /var/www/html/.htaccess
+```
+
+- To set the correct permissions for the HTML directory:
+
+```bash
+sudo chown -R www-data:www-data /var/www/html/
+```
+```bash
+sudo find /var/www/html/ -type d -exec chmod 755 {} \;
+```
+
+```bash
+sudo find /var/www/html/ -type f -exec chmod 644 {} \;
+```
