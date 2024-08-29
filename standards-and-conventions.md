@@ -45,3 +45,16 @@ The following is the folder structure used within the repository to maintain a c
 - **/src**: The source code directory.
   - **/app**: Holds the application code.
   - **/iac**: Infrastructure as Code (IaC) files for setting up the environment.
+
+
+## Release Notes
+
+|<p>**Date**</p><p>**@Develper account**</p><p> **Tag**</p><p> **Commit** <br />&nbsp;<br /> <br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br />  </p>|<p>**Product Name version** </p><p> (Org name/link) released in (n) days ago	 (tag) 		(commit) </p><p></p><p> Version (Release Date)</p><p></p><p>**Features Added:**</p><p>- Issue Title (Issue ID, PR ID) </p><p></p><p>**Bugs Fixed:**</p><p>- Issue Title (Issue ID, PR ID) </p><p></p><p>**Assets**</p><p> App (zip)	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date </p><p> Source code (zip) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</p><p></p>|
+| :- | :- |
+
+
+**Example:**
+
+
+|<p>**Aug 06**</p><p>**[@Mohamed Radwan]()**</p><p> **[20240514.1]()**</p><p> **[ce53bd8]()** <br />&nbsp;<br /> <br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br /><br />&nbsp;<br />  </p>|<p>**Q2A AutoKit 1.6.1** </p><p> [DevOpsVisions]() released in (n) days ago Q2AAutoKit [2c537d3]() </p><p></p><p> 1.6.1 (06-08-2024)</p><p></p><p>**Features Added:**</p><p>- Added a new read-only property ([#345](), [#254]()) </p><p></p><p>**Bugs Fixed:**</p><p>-First row MS Excel error ([#123](), [234]()) </p><p></p><p>**Assets**</p><p> [App (zip)]() &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 August </p><p> [Source code (zip)]() &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 August</p><p></p>|
+| :- | :- |
