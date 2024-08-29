@@ -102,7 +102,7 @@ These commands set up a lightweight desktop environment (Xfce) and enable XRDP f
 
 For browsing or downloading files directly on the VM, install a web browser like Google Chrome or Firefox.
 
-**Commands to Install Google Chrome:**
+**To Install Google Chrome:**
 
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -114,13 +114,29 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt --fix-broken install -y
 ```
 
-**Commands to Install Firefox:**
+**To Install Firefox:**
 
 ```bash
 sudo apt install firefox -y
 ```
 
-## 9. Install the LAMP Stack
+## 9. Install Unzip or Unrar 
+
+Install `unzip` or `unar` to extract the downloaded files.
+
+**To Install Unzip**
+
+```bash
+sudo apt install unzip
+```
+
+**To Install Unrar**
+
+```bash
+sudo apt install unar
+```
+
+## 10. Install the LAMP Stack
 
 The LAMP stack (Linux, Apache, MySQL, PHP) is required for hosting Q2A/WordPress site.
 
@@ -128,7 +144,7 @@ The LAMP stack (Linux, Apache, MySQL, PHP) is required for hosting Q2A/WordPress
 sudo apt update && sudo apt install lamp-server^ -y
 ```
 
-## 10. Verify Installation
+## 11. Verify Installation
 
 After installing the LAMP stack, verify that each component is correctly installed.
 
@@ -139,7 +155,7 @@ php -v
 ```
 These commands check the versions of Apache, MySQL, and PHP to ensure they're installed correctly.
 
-## 11. Create a PHP Info File (Optional)
+## 12. Create a PHP Info File (Optional)
 
 To verify PHP is functioning properly, create a PHP info page.
 
@@ -148,7 +164,7 @@ sudo sh -c 'echo "<?php phpinfo(); ?>" > /var/www/html/info.php'
 ```
 Then, in your browser, navigate to http://yourPublicIpAddress/info.php to view the PHP configuration details.
 
-## 12. Secure MySQL Installation
+## 13. Secure MySQL Installation
 
 Secure your MySQL installation by running the MySQL secure installation script.
 
@@ -157,7 +173,7 @@ sudo mysql_secure_installation
 ```
 This script prompts you to set a root password, remove anonymous users, disallow root login remotely, and more, to enhance your MySQL security.
 
-## 13. Configure MySQL Root User
+## 14. Configure MySQL Root User
 
 Finally, update the MySQL root user to use a native password authentication method and set a strong password.
 
