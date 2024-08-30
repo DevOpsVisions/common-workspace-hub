@@ -69,9 +69,11 @@ By adopting the kebab case for URLs, file names, Azure resources, and GitHub rep
 For more information on kebab case, you can refer to this detailed [guide on MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) or this article on [SmartWP](https://smartwp.com/kebab-case/).
 
 
-### Convention for GitHub Titles
+## Convention for GitHub Titles
 
-To distinguish between issues and pull requests (PRs) in GitHub while following best practices, we use specific conventions for titles:
+To distinguish between issues and pull requests (PRs) on GitHub while following best practices, we use specific conventions for titles. This approach ensures consistency, clarity, and organization within our repositories.
+
+- **Purpose**: These conventions are designed to enhance communication and streamline the development process, making it easier to identify and understand each item, thereby improving collaboration and efficiency.
 
 **Convention for GitHub Issue Title:**
 
