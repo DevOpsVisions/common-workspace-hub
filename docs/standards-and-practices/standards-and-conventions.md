@@ -41,7 +41,7 @@ The following is the folder structure used within the repository to maintain a c
 
 - **/docs**: Contains all documentation related to the project.
   - **/standards-and-practices**: Holds documents outlining the standards and practices followed in the project.
-  - **/technical-guides**: Contains guides for deploying and managing the project, like `deploy_q2a_azure_vm.md`.
+  - **/technical-guides**: Contains guides for deploying and managing the project, like `deploy-q2a-azure-vm.md`.
   
 - **/src**: The source code directory.
   - **/app**: Holds the application code.
@@ -58,15 +58,36 @@ The following is the release note template used to organize key details of a pro
 By adopting the kebab case for URLs, file names, Azure resources, and GitHub repositories, the projects maintain clarity and uniformity across different web assets, cloud infrastructure, and code repositories, improving both collaboration and readability.
 - **Purpose**: Kebab case is used to enhance readability and maintain uniformity in naming conventions. This format, which uses lowercase letters and hyphens to separate words (e.g., `project-name`, `user-profile`), is applied consistently across multiple contexts.
 
-- **Use Cases**:
+- **Use Cases Relevant to Our Projects**:
   - **URLs and Slugs**: Clean, SEO-friendly URLs (e.g., `https://example.com/user-profile/settings`).
   - **File Names**: Consistently formatted file names across different environments, ensuring clarity and ease of management (`data-fetching-service.js`).
   - **Azure Resources**: All Azure resource names (such as storage accounts, databases, and resource groups) will follow the kebab case convention (e.g., `my-storage-account`), aligning with Azure's naming guidelines for easier resource identification and management.
   - **GitHub Repositories**: Repository names on GitHub will use kebab case (e.g., `project-management-tool`), providing consistency across version control and collaboration efforts.
 
+By using kebab case, these examples demonstrate a clear and consistent naming convention that is both readable and suitable for various web and programming contexts.
 
 
 For more information on kebab case, you can refer to this detailed [guide on MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) or this article on [SmartWP](https://smartwp.com/kebab-case/).
+
+## PascalCase
+PascalCase is used for naming conventions where each word starts with an uppercase letter. This style is commonly used for naming classes, methods, public properties, and interfaces in C#.
+
+- **Purpose**: Enhances readability and provides a consistent format for naming elements that are publicly accessible or part of the overall architecture.
+
+- **Use Cases Relevant to Our Projects**:
+  - **Class Names**: All class names will use PascalCase (e.g., `UserService`, `DataProcessor`), ensuring clear identification and alignment with C# standards.
+  - **Method Names**: Method names will also follow PascalCase (e.g., `FetchData`, `SaveChanges`), making them easily recognizable as functions.
+  - **Interfaces**: Interfaces will be named using PascalCase and typically start with an "I" (e.g., `IConfigurationService`), distinguishing them from regular classes.
+  - **Public Properties**: Public properties will use PascalCase (e.g., `UserName`, `OrderDate`), providing consistency across publicly accessible fields.
+
+## camelCase
+camelCase is used for naming conventions where the first letter is lowercase and each subsequent word starts with an uppercase letter. This style is typically used for local variables, method parameters, and private fields.
+
+- **Purpose**: Maintains clarity and differentiation between local elements and public or architectural components, supporting a clean and organized code structure.
+
+- **Use Cases Relevant to Our Projects**:
+  - **Variables and Parameters**: Local variables and method parameters will use camelCase (e.g., `userName`, `orderDetails`), enhancing readability within methods and distinguishing them from other elements.
+  - **Private Fields**: Private fields within classes often use camelCase (e.g., `configValue`, `itemCount`), keeping them distinct from public properties and adhering to internal consistency.
 
 
 ## Convention for GitHub Titles
