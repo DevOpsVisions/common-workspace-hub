@@ -15,9 +15,9 @@ To maintain a structured and organized codebase, the following naming convention
 
 - **Solution File**: The overarching solution file that includes all related projects.
 - **Project Files**:
-  - The main project file for the core application.
-  - The project file dedicated to unit tests.
-  - The project file dedicated to integration tests.
+  - One main project file for the core application.
+  - One project file dedicated to unit tests.
+  - One project file dedicated to integration tests.
 
 ## Azure Cloud
 
@@ -103,7 +103,7 @@ Format: `[Type] - [Component/Area] - [Brief Description of Problem or Need]`
 
 Example: `Bug - User Authentication - Error When Logging In`
 
-- **[Type]**: Indicate the type of issue, such as Bug, Feature Request, Improvement, Task, Documentation, or Refactor.
+- **[Type]**: Indicate the type of issue, such as Bug, Feature, Story, Improvement, Task, Documentation, or Refactor.
 - **[Component/Area]**: Mention the specific component, feature, or area of the project affected (e.g., User Authentication, UI, API).
 - **[Brief Description of Problem or Need]**: Provide a short and clear description of the problem, need, or request.
 
