@@ -61,6 +61,7 @@ By adopting the kebab case for URLs, file names, Azure resources, and GitHub rep
 - **Use Cases Relevant to Our Projects**:
   - **URLs and Slugs**: Clean, SEO-friendly URLs (e.g., `https://example.com/user-profile/settings`).
   - **File Names**: Consistently formatted file names across different environments, ensuring clarity and ease of management (`data-fetching-service.js`).
+  - **Folder Names**: All folder names (e.g., `project-assets`, `user-profiles`), providing a consistent approach to organizing directories in both local and cloud environments.
   - **Azure Resources**: All Azure resource names (such as storage accounts, databases, and resource groups) will follow the kebab case convention (e.g., `my-storage-account`), aligning with Azure's naming guidelines for easier resource identification and management.
   - **GitHub Repositories**: Repository names on GitHub will use kebab case (e.g., `project-management-tool`), providing consistency across version control and collaboration efforts.
 
