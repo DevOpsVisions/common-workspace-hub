@@ -15,37 +15,10 @@
 9. Pay close attention to commit messages, as they will explain why a change was made. Consider commit messages as a mini form of documentation for the change.
 10. Be a team player and follow agreed-upon conventions and workflows, regardless of your background or preferences.
 
-### Convention for GitHub Titles
 
-To distinguish between issues and pull requests (PRs) in GitHub while following best practices, we use specific conventions for titles:
+### Convention for GitHub Issues and PRs
 
-**Convention for GitHub Issue Title:**
-
-Format: `[Type] - [Component/Area] - [Brief Description of Problem or Need]`
-
-Example: `Bug - User Authentication - Error When Logging In`
-
-- **[Type]**: Indicate the type of issue, such as Bug, Feature Request, Improvement, Task, Documentation, or Refactor.
-- **[Component/Area]**: Mention the specific component, feature, or area of the project affected (e.g., User Authentication, UI, API).
-- **[Brief Description of Problem or Need]**: Provide a short and clear description of the problem, need, or request.
-
-**Convention for Pull Request (PR) Title:**
-
-Format: `[Action] - [Component/Area] - [Brief Description of Change] (Issue ID)`
-
-Example: `Refactor - User Authentication - Simplify Login Logic (#456)`
-
-- **[Action]**: Specify the action being taken, such as Add, Fix, Refactor, Update, Remove, Enhance, or Document.
-- **[Component/Area]**: Mention the specific component, feature, or area of the project affected (e.g., User Authentication, UI, API).
-- **[Brief Description of Change]**: Provide a concise description of the change or improvement.
-- **(Issue ID)**: Include the relevant issue ID in parentheses to link the PR to the corresponding issue.
-
-**Examples:**
-
-- **Issue Title**: `Feature Request - Dashboard - Add User Analytics Section`
-- **PR Title**: `Add - Dashboard - User Analytics Section (#123)`
-
-By distinguishing between the purpose of an issue (describing a problem or request) and a pull request (indicating a specific action taken to address an issue), the titles become more informative and aligned with best practices for collaborative development.
+Our Issues and Pull Requests (PRs) adhere to specific conventions and standards. Please ensure that you follow these guidelines. For more details, you can refer to them here: [Common Conventions and Standards](../standards-and-practices/standards-and-conventions.md)
 
 ### For Moderators
 
