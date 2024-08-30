@@ -1,9 +1,9 @@
 # Common Conventions and Standards
-
+This document provides guidance on common conventions and standards, including examples but without specific values. For precise conventions and values, please refer to the detailed guidelines within each individual project and repository.
 
 ## Repository and Application
 
-This section outlines the standardized naming conventions used throughout both projects to maintain consistency and clarity:
+This section outlines the objects that should standardized naming conventions used throughout all projects to maintain consistency and clarity:
 
 - **Repository Name**: The full, descriptive name for the project repository, reflecting its purpose.
 - **Application Name**: The concise, user-friendly name for the application, ideal for branding and communication.
@@ -120,7 +120,51 @@ Example: `Refactor - User Authentication - Simplify Login Logic (#456)`
 
 **Examples:**
 
-- **Issue Title**: `Feature Request - Dashboard - Add User Analytics Section`
+- **Issue Title**: `Feature - Dashboard - Add User Analytics Section`
 - **PR Title**: `Add - Dashboard - User Analytics Section (#123)`
 
 By distinguishing between the purpose of an issue (describing a problem or request) and a pull request (indicating a specific action taken to address an issue), the titles become more informative and aligned with best practices for collaborative development.
+
+### More Examples for Issues:
+
+1. **Bug Reports:**
+   - `Bug - API - Null Pointer Exception on Empty Input`
+   - `Bug - User Profile - Image Upload Fails on Large Files`
+   
+2. **Feature:**
+   - `Feature - Dashboard - Add User Analytics Section`
+   - `Feature - Notifications - Enable Push Notifications`
+
+3. **Improvements:**
+   - `Improvement - UI - Enhance Accessibility for Screen Readers`
+   - `Improvement - Performance - Optimize Database Queries for Reports`
+
+4. **Documentation:**
+   - `Documentation - API - Add Examples for Authentication Endpoints`
+   - `Documentation - Setup Guide - Update Instructions for Windows Installation`
+
+5. **Questions:**
+   - `Question - API - Clarification Needed on Rate Limiting`
+   - `Question - UI - Best Practices for Custom Theming`
+
+### More Examples for Pull Requests (PRs):
+
+1. **Bug Fixes:**
+   - `Fix - API - Handle Null Pointer Exception on Empty Input (#101)`
+   - `Fix - User Profile - Correct Image Upload Logic (#202)`
+
+2. **Feature Additions:**
+   - `Add - Dashboard - User Analytics Section (#303)`
+   - `Add - Notifications - Implement Push Notifications Feature (#404)`
+
+3. **Improvements:**
+   - `Enhance - UI - Improve Accessibility for Screen Readers (#505)`
+   - `Optimize - Performance - Refactor Database Queries for Reports (#606)`
+
+4. **Refactoring:**
+   - `Refactor - User Authentication - Simplify Login Logic (#707)`
+   - `Refactor - Codebase - Modularize CSS for Better Maintainability (#808)`
+
+5. **Documentation Updates:**
+   - `Document - API - Add Usage Examples for Authentication Endpoints (#909)`
+   - `Update - Setup Guide - Revise Windows Installation Instructions (#1010)`
