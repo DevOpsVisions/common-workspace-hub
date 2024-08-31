@@ -30,7 +30,8 @@ One primary way to contribute is by opening issues on GitHub. Issues help identi
 
 Correcting bugs or typos in the repository helps maintain its professionalism and reflects the quality of the content offered.
 
-If you find a bug or typo, simply fork the repository, make the corrections, and create a pull request (PR). Remember to follow our [Contribution Culture](contribution-culture.md) guidelines.
+If you find a bug or typo, simply fork the repository, make the corrections, and create a pull request (PR). 
+Remember to follow our Contribution Culture guidelines you can refer to them here: [Contribution Culture](contribution-culture.md)
 
 ### When to Open an Issue and When to Open a Pull Request
 
