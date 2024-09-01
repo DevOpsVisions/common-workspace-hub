@@ -26,12 +26,11 @@ One primary way to contribute is by opening issues on GitHub. Issues help identi
 - **Reviewing board items (stories)**: Review issues or stories on the project board and contribute code to implement them.
 - **Reviewing board items (bugs)**: Review reported issues and bugs on the project board and provide fixes.
 
-### Fixing Bugs or Typos With No Issues
+### Fixing Undocumented Bugs and Typos
 
-Correcting bugs or typos in the repository helps maintain its professionalism and reflects the quality of the content offered.
+Correcting undocumented bugs or typos in the repository helps maintain its professionalism and reflects the quality of the content offered, even when no official issues are logged.
 
-If you find a bug or typo, simply fork the repository, make the corrections, and create a pull request (PR). 
-Remember to follow our Contribution Culture guidelines you can refer to them here: [Contribution Culture](contribution-culture.md)
+If you notice a bug or typo that hasn't been documented, you can still make a valuable contribution by forking the repository, implementing the necessary corrections, and creating a pull request (PR). Remember to adhere to our Contribution Culture guidelines, which you can find here: [Contribution Culture](contribution-culture.md)
 
 ### When to Open an Issue and When to Open a Pull Request
 

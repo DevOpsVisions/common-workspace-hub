@@ -91,13 +91,13 @@ camelCase is used for naming conventions where the first letter is lowercase and
   - **Private Fields**: Private fields within classes often use camelCase (e.g., `configValue`, `itemCount`), keeping them distinct from public properties and adhering to internal consistency.
 
 
-## Convention for GitHub Titles
+## GitHub Titles
 
 To distinguish between issues and pull requests (PRs) on GitHub while following best practices, we use specific conventions for titles. This approach ensures consistency, clarity, and organization within our repositories.
 
 - **Purpose**: These conventions are designed to enhance communication and streamline the development process, making it easier to identify and understand each item, thereby improving collaboration and efficiency.
 
-**Convention for GitHub Issue Title:**
+**GitHub Issue Title:**
 
 Format: `[Type] - [Component/Area] - [Brief Description of Problem or Need]`
 
@@ -107,7 +107,7 @@ Example: `Bug - User Authentication - Error When Logging In`
 - **[Component/Area]**: Mention the specific component, feature, or area of the project affected (e.g., User Authentication, UI, API).
 - **[Brief Description of Problem or Need]**: Provide a short and clear description of the problem, need, or request.
 
-**Convention for Pull Request (PR) Title:**
+**Pull Request (PR) Title:**
 
 Format: `[Action] - [Component/Area] - [Brief Description of Change] (Issue ID)`
 

@@ -7,7 +7,7 @@
 1. Try to make small changes first.
 2. Verify your changes before pushing them to the repository.
 3. Update often and right before pushing to avoid merge conflicts.
-4. Ensure your pull request has only changes (commits) related to the relevant issue
+4. Ensure your pull request has only changes (commits) related to the relevant issue.
 5. Check the size of the issue first; if it is large, divide it into smaller items if possible.
 6. Don't move the item from "New" to "Ready" until it has a size and priority.
 7. Use comments in issue to discuss any topics related to that issue.
@@ -30,5 +30,5 @@ For more details, you can refer to them here: [Common Conventions and Standards]
 4. Monitor the size and scope of issues, encouraging contributors to split larger items into smaller, manageable tasks.
 5. Ensure items are not moved from "New" to "Ready" until they have a size and priority.
 6. Oversee discussions in issues to ensure clarity and constructive collaboration, and redirect contributors from chat to comments for all non-urgent communications.
-7. Enforce proper naming conventions for issues and PRs titles and commit messages.
+7. Enforce proper naming conventions for everything, solution, project files, folders, file names, issues, PRs titles and commit messages, etc.
 8. Maintain a collaborative and inclusive environment, promoting adherence to the workflow and culture guidelines.
