@@ -165,15 +165,20 @@ By distinguishing between the purpose of an issue (describing a problem or reque
    - `Feature - Dashboard - Add User Analytics Section`
    - `Feature - Notifications - Enable Push Notifications`
 
-3. **Improvements:**
+3. **User Stories:**
+   - `Story - Shopping Cart - Save items for later in the shopping cart`
+   - `Story - Notifications - Enable email alerts for important updates`
+
+
+4. **Improvements:**
    - `Improvement - UI - Enhance Accessibility for Screen Readers`
    - `Improvement - Performance - Optimize Database Queries for Reports`
 
-4. **Documentation:**
+5. **Documentation:**
    - `Documentation - API - Add Examples for Authentication Endpoints`
    - `Documentation - Setup Guide - Update Instructions for Windows Installation`
 
-5. **Questions:**
+6. **Questions:**
    - `Question - API - Clarification Needed on Rate Limiting`
    - `Question - UI - Best Practices for Custom Theming`
 
