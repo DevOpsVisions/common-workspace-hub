@@ -23,10 +23,6 @@ To maintain a structured and organized codebase, the following naming convention
 
 A well-structured naming convention for Azure resources is crucial for quickly identifying the resource type, associated workload, environment, Azure region, and instance. Our naming convention follows these key elements:
 
-## Azure Cloud
-
-A well-structured naming convention for Azure resources is crucial for quickly identifying the resource type, associated workload, environment, Azure region, and instance. Our naming convention follows these key elements:
-
 ### Example:
 
 - **Resource Type:** `vm`, `st`, `appsvc`, `sql`, `nsg`, `kv`, `rg`, `pip`, `aks`, `lb`
