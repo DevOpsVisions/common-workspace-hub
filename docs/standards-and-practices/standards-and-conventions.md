@@ -117,6 +117,108 @@ camelCase is used for naming conventions where the first letter is lowercase and
   - **Private Fields**: Private fields within classes often use camelCase (e.g., `configValue`, `itemCount`), keeping them distinct from public properties and adhering to internal consistency.
 
 
+## Command Line Interface (CLI) Silent Mode
+
+To enhance usability and maintain a consistent approach across our toolkits and frameworks, all CLI tools will support a silent mode. This mode allows commands to be executed without interactive prompts, facilitating automation and script integration. Below are the guidelines for implementing silent mode:
+
+### Method and Function Naming
+
+- **Naming Convention**: All methods or functions called via CLI should use kebab case notation. This involves using lowercase letters with words separated by hyphens.
+- **Examples**:
+  - `OurToolKit.exe add-user`
+  - `OurToolKit.exe add-users`
+  - `OurToolKit.exe remove-user`
+  - `OurToolKit.exe list-users`
+  - `OurToolKit.exe update-user`
+  - `OurToolKit.exe reset-password`
+
+### Parameter Naming
+
+- **Naming Convention**: Parameters should follow the kebab case notation and be prefixed with two hyphens (`--`). For commonly used parameters, abbreviated versions are allowed.
+- **Examples**:
+  - `--user-name -un`
+  - `--password -pass`
+  - `--email -e`
+  - `--role -r`
+  - `--output-file -o`
+  - `--start-date -sd`
+  - `--end-date -ed`
+
+### Parameter Descriptions
+
+- Each parameter must include a clear description of its purpose. The description should be concise and directly associated with the parameter in the help documentation.
+- **Example Descriptions**:
+  - `--user-name`: The full name of the user to be added or managed (e.g., `"John Doe"`).
+  - `--password`: The user's password for authentication (e.g., `"SecurePass123"`).
+  - `--email`: The email address of the user (e.g., `"johndoe@example.com"`).
+  - `--role`: The role assigned to the user (e.g., `"admin"`, `"editor"`).
+  - `--output-file`: The path to the output file where results will be saved (e.g., `"results.txt"`).
+  - `--start-date`: The start date for the report in `YYYY-MM-DD` format (e.g., `"2024-09-12"`).
+  - `--end-date`: The end date for the report in `YYYY-MM-DD` format (e.g., `"2024-09-19"`).
+
+### Parameter Values
+
+- **Format**: Parameters are followed directly by their values.
+- **Examples**:
+  - `--user-name "Mohamed Radwan"`
+  - `--password "SecurePass123"`
+  - `--email "mohamed.radwan@example.com"`
+  - `--role "admin"`
+  - `--output-file "C:\results\output.txt"`
+  - `--start-date "2024-09-01"`
+  - `--end-date "2024-09-30"`
+
+### Help and Usage Information
+
+- **Help Command**: Each method should support a help command (`--help`) that displays all available parameters, their descriptions, and examples of usage.
+
+
+### Example Output of `--help`
+
+For a command like `OurToolKit.exe add-user --help`, the output should look like this:
+
+### Description
+
+The `add-user` command is used to add a new user to the system. This command allows you to specify various attributes for the user, such as their name, password, email, role, and other optional details like department and active dates.
+
+#### Usage
+Usage: OurToolKit.exe add-user [options]
+
+#### Options
+
+- `--user-name, -un`  
+  The full name of the user to be added (e.g., "John Doe").
+
+- `--password, -pass`  
+  The password for the new user (e.g., "SecurePass123").
+
+- `--email, -e`  
+  The email address of the user (e.g., "johndoe@example.com").
+
+- `--role, -r`  
+  The role assigned to the user (e.g., "admin", "editor").
+
+- `--department, -d`  
+  The department to which the user belongs (e.g., "Sales", "IT").
+
+- `--start-date, -sd`  
+  The start date for the user in the format YYYY-MM-DD (e.g., "2024-09-01").
+
+- `--end-date, -ed`  
+  The end date for the user in the format YYYY-MM-DD (e.g., "2024-09-30").
+
+- `--help`  
+  Show this help message and exit.
+
+#### Examples
+
+**Adding a New Admin User:**
+
+`OurToolKit.exe add-user --user-name "John Doe" --password "SecurePass123" --email "johndoe@example.com" --role "admin"`
+
+By adopting these guidelines, we ensure that our CLI tools are user-friendly, well-documented, and consistent across all toolkits and frameworks, enhancing the overall developer experience.
+
+
 ## GitHub Titles
 
 To distinguish between issues and pull requests (PRs) on GitHub while following best practices, we use specific conventions for titles. This approach ensures consistency, clarity, and organization within our repositories.
