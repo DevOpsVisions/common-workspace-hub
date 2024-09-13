@@ -20,7 +20,8 @@ This document provides guidance on generating web-based documentation from C# co
 **Prerequisites:**
 
 -   Install DocFX by downloading the latest release or using Chocolatey:
--   
+  
+
 `choco install docfx -y`
 
 **1. Add XML Documentation Comments to Your Code:**
@@ -242,7 +243,7 @@ To generate web-based documentation from your C# code similar to the Microsoft D
 -   Ensure your code is well-documented with XML comments.
 -   Customize and organize your documentation for the best user experience.
 -   Deploy your documentation to a hosting service for public access.
--   
+   
 
 ## Additional Resources
 
