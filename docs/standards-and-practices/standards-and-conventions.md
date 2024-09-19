@@ -43,11 +43,50 @@ The following is the folder structure used within the repository to maintain a c
 - **/docs**: Contains all documentation related to the project.
   - **/standards-and-practices**: Holds documents outlining the standards and practices followed in the project.
   - **/technical-guides**: Contains guides for deploying and managing the project, like `deploy-q2a-azure-vm.md`.
-  
+
 - **/src**: The source code directory.
   - **/app**: Holds the application code.
-  - **/iac**: Infrastructure as Code (IaC) files for setting up the environment.
+  - **/iac**: Infrastructure as Code (IaC) files and configurations.
+    - **/scripts**: Shell scripts for automation.
+      - **setup.sh**: Script to set up the environment.
+      - **destroy.sh**: Script to tear down the environment.
+      - **backup.sh**: Script to create backups.
+    
+    - **/terraform**: Shared Terraform configuration files.
+      - **main.tf**: Shared resources configuration across all environments.
+      - **variables.tf**: Shared variable definitions.
+      - **outputs.tf**: Shared outputs.
+      - **provider.tf**: Provider configuration.
+      - **versions.tf**: Terraform version constraints.
+      - **/env_override**: Environment-specific variable overrides.
+        - **dev.tfvars**: Overrides for the development environment.
+        - **staging.tfvars**: Overrides for the staging environment.
+        - **prod.tfvars**: Overrides for the production environment.
 
+      - **/modules**: Reusable Terraform modules.
+        - **/network**: Networking-related Terraform module.
+          - **main.tf**: Main configuration for the network module.
+          - **variables.tf**: Variable definitions for the network module.
+          - **outputs.tf**: Output values for the network module.
+        - **/compute**: Compute-related Terraform module.
+          - **main.tf**: Main configuration for the compute module.
+          - **variables.tf**: Variable definitions for the compute module.
+          - **outputs.tf**: Output values for the compute module.
+        - **/storage**: Storage-related Terraform module.
+          - **main.tf**: Main configuration for the storage module.
+          - **variables.tf**: Variable definitions for the storage module.
+          - **outputs.tf**: Output values for the storage module.
+
+      - **/environments**: Environment-specific configurations.
+        - **/dev**: Development environment configurations.
+          - **main.tf**: Main configuration for the development environment.
+          - **terraform.tfvars**: Variable values specific to the development environment.
+        - **/staging**: Staging environment configurations.
+          - **main.tf**: Main configuration for the staging environment.
+          - **terraform.tfvars**: Variable values specific to the staging environment.
+        - **/prod**: Production environment configurations.
+          - **main.tf**: Main configuration for the production environment.
+          - **terraform.tfvars**: Variable values specific to the production environment.
 
 ### Folder Structure and Descriptions for DB Repos
 
@@ -72,7 +111,58 @@ The following is the folder structure used within the repository to maintain a c
 
   - **/iac**: Infrastructure as Code (IaC) files for setting up the environment, including database provisioning and configuration scripts.
 
+### Folder Structure and Descriptions for GitHub Actions
 
+- **/.github**: Contains GitHub Actions workflows and configurations.
+  - **/workflows**: Default directory for GitHub Action workflows.
+    - **main.yml**: Main workflow for CI/CD pipeline.
+    - **test.yml**: Testing workflow.
+    - **deploy.yml**: Deployment workflow.
+    - **dispatch.yml**: Manual or scheduled workflow trigger.
+    - **/reusable-workflows**: Contains reusable workflows.
+      - **linting.yml**: Linting reusable workflow.
+      - **test-reusable.yml**: Testing reusable workflow.
+      
+  - **/actions**: Custom GitHub Actions defined in the repository.
+    - **/my-custom-action**: Custom action directory.
+      - **Dockerfile**: Dockerfile for the custom action.
+      - **action.yml**: Metadata file for the custom action.
+      - **entrypoint.sh**: Entrypoint script for the custom action.
+      
+  - **/scripts**: Utility scripts used in workflows.
+    - **deploy.sh**: Script for deployment.
+    - **test.sh**: Script for running tests.
+    - **lint.sh**: Script for linting.
+
+### Benefits of This Structure
+
+#### App Repositories
+
+1. **Separation of Concerns**: The structure separates documentation, application code, and infrastructure configurations, making it easier to manage and navigate.
+2. **Scalability**: The modular approach in `iac/terraform/modules` and environment-specific configurations under `environments/` allow the project to scale without cluttering the repository.
+3. **Maintainability**: Clear organization of application logic, infrastructure, and scripts simplifies maintenance and updates, as changes can be localized to specific directories.
+
+#### Infrastructure as Code (IaC)
+
+1. **Modularization**: Reusable Terraform modules allow for a consistent setup across different environments and projects, reducing duplication and the potential for errors.
+2. **Environment-Specific Configurations**: The `env_override` and `environments` directories enable tailored infrastructure configurations for dev, staging, and production environments, promoting best practices for managing different deployment stages.
+3. **Automation**: Scripts in the `scripts` directory automate repetitive tasks, enhancing efficiency and reducing the risk of human error during infrastructure management.
+
+#### Database Repositories
+
+1. **Clear Organization**: The separation of different database components (schemas, stored procedures, functions, etc.) into their own directories makes it easy to locate and manage specific parts of the database.
+2. **Version Control and Migrations**: The `migrations` directory supports version control of the database schema, making it easier to track and apply changes over time.
+3. **Consistency and Best Practices**: By organizing the database code and configurations according to established standards and practices, the structure helps ensure the integrity and quality of the database.
+
+
+#### GitHub Actions
+
+1. **Organization**: Clearly separates different types of workflows and actions, making the repository easy to navigate and understand.
+2. **Reusability**: Reusable workflows allow common tasks to be shared across multiple workflows or repositories, reducing duplication and ensuring consistency.
+3. **Maintainability**: Specific parts of the workflow, such as deployment or testing scripts, can be updated independently without affecting other workflows.
+4. **Scalability**: New workflows, scripts, or actions can be added without cluttering the main workflows directory, allowing for easy expansion as the project grows.
+
+Overall, this structure promotes clarity, reusability, and maintainability across the app, infrastructure, and database repositories.
 
 ## Release Notes Template 
 The following is the release note template used to organize key details of a product update, including release date, developer info, version, new features, bug fixes, and downloadable assets. It ensures clear communication of changes to users.
