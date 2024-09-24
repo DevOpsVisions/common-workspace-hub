@@ -105,7 +105,7 @@ The following is the folder structure used within the repository to maintain a c
     - **/scripts**: Contains additional SQL scripts or utility scripts that do not fit into other specific categories.
     - **/seed-data**: Holds data seeding scripts for populating the database with initial or test data.
     - **/backups**: Contains database backup files. (Ensure sensitive information is handled appropriately.)
-    - **/config**: Holds configuration files related to database connections, environment settings, or other relevant configurations.
+    - **/configs**: Holds configuration files related to database connections, environment settings, or other relevant configurations.
     - **/indexes**: Contains SQL scripts for defining indexes used in the database.
     - **/constraints**: Holds scripts for defining constraints, such as primary keys, foreign keys, and unique constraints.
 
