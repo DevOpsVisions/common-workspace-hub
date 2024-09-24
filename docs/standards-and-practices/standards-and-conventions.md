@@ -58,7 +58,7 @@ The following is the folder structure used within the repository to maintain a c
       - **outputs.tf**: Shared outputs.
       - **provider.tf**: Provider configuration.
       - **versions.tf**: Terraform version constraints.
-      - **/env_override**: Environment-specific variable overrides.
+      - **/env-override**: Environment-specific variable overrides.
         - **dev.tfvars**: Overrides for the development environment.
         - **staging.tfvars**: Overrides for the staging environment.
         - **prod.tfvars**: Overrides for the production environment.
