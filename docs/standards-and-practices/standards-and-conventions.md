@@ -145,7 +145,7 @@ The following is the folder structure used within the repository to maintain a c
 #### Infrastructure as Code (IaC)
 
 1. **Modularization**: Reusable Terraform modules allow for a consistent setup across different environments and projects, reducing duplication and the potential for errors.
-2. **Environment-Specific Configurations**: The `env_override` and `environments` directories enable tailored infrastructure configurations for dev, staging, and production environments, promoting best practices for managing different deployment stages.
+2. **Environment-Specific Configurations**: The `env-override` and `environments` directories enable tailored infrastructure configurations for dev, staging, and production environments, promoting best practices for managing different deployment stages.
 3. **Automation**: Scripts in the `scripts` directory automate repetitive tasks, enhancing efficiency and reducing the risk of human error during infrastructure management.
 
 #### Database Repositories
