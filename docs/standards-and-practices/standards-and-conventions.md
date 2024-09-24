@@ -97,13 +97,13 @@ The following is the folder structure used within the repository to maintain a c
 - **/src**: The source code directory.
   - **/db**: Contains all database-related files.
     - **/schemas**: Holds database schema definition files, such as table structures, relationships, and indexes.
-    - **/stored_procedures**: Contains stored procedure scripts that encapsulate business logic.
+    - **/stored-procedures**: Contains stored procedure scripts that encapsulate business logic.
     - **/functions**: Contains scripts for database functions, including scalar and table-valued functions.
     - **/views**: Holds SQL scripts that define database views.
     - **/triggers**: Contains scripts for database triggers, such as after/insert/update/delete triggers.
     - **/migrations**: Contains migration scripts for handling schema changes, versioning, and updates to the database.
     - **/scripts**: Contains additional SQL scripts or utility scripts that do not fit into other specific categories.
-    - **/seed_data**: Holds data seeding scripts for populating the database with initial or test data.
+    - **/seed-data**: Holds data seeding scripts for populating the database with initial or test data.
     - **/backups**: Contains database backup files. (Ensure sensitive information is handled appropriately.)
     - **/config**: Holds configuration files related to database connections, environment settings, or other relevant configurations.
     - **/indexes**: Contains SQL scripts for defining indexes used in the database.
