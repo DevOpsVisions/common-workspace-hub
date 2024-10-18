@@ -35,7 +35,7 @@ jobs:
       - name: Determine Version
         id: determine_version
         run: |
-          version=$(grep -oPm1 "(?<=<Version>)[^<]+" ${{ inputs.working-directory }}/YourProject.csproj)
+          version=$(grep -oPm1 "(?<=<Version>)[^<]+" $(find ${{ inputs.working-directory }} -name "*.csproj" | head -n 1))
           echo "::set-output name=version::$version"
       
       - name: Create Git Tag
