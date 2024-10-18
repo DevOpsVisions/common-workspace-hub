@@ -32,6 +32,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
+      - name: Determine Version
+        id: determine_version
+        run: |
+          version=$(grep -oPm1 "(?<=<Version>)[^<]+" ${{ inputs.working-directory }}/YourProject.csproj)
+          echo "::set-output name=version::$version"
+      
+      - name: Create Git Tag
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${{ steps.determine_version.outputs.version }}" -m "Release version ${{ steps.determine_version.outputs.version }}"
+          git push origin "v${{ steps.determine_version.outputs.version }}"
+
       - name: Build
         run: dotnet build --configuration Release
       
@@ -39,7 +52,7 @@ jobs:
         run: dotnet test --configuration Release --no-build
 
       - name: Pack
-        run: dotnet pack --configuration Release --no-restore --output ./nupkg
+        run: dotnet pack --configuration Release --no-restore --output ./nupkg /p:PackageVersion=${{ steps.determine_version.outputs.version }}
 
       - name: Publish to GitHub Packages
-        run: dotnet nuget push ./nupkg/*.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
+        run: dotnet nuget push ./nupkg/*.${{ steps.determine_version.outputs.version }}.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
