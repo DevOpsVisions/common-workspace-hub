@@ -1,5 +1,3 @@
-# .github/workflows/nuget-publish-workflow.yml
-
 name: Reusable Build and Publish NuGet Package
 
 on:
@@ -11,6 +9,10 @@ on:
         type: string
       package-source:
         description: 'NuGet source URL for publishing the package'
+        required: true
+        type: string
+      version:
+        description: 'The static version to use for the package'
         required: true
         type: string
     secrets:
@@ -27,32 +29,19 @@ jobs:
     defaults:
       run:
         working-directory: ${{ inputs.working-directory }}
-        
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
-      - name: Determine Version
-        id: determine_version
-        run: |
-          version=$(grep -oPm1 "(?<=<Version>)[^<]+" $(find ${{ inputs.working-directory }} -name "*.csproj" | head -n 1))
-          echo "::set-output name=version::$version"
-      
-      - name: Create Git Tag
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -a "v${{ steps.determine_version.outputs.version }}" -m "Release version ${{ steps.determine_version.outputs.version }}"
-          git push origin "v${{ steps.determine_version.outputs.version }}"
 
       - name: Build
         run: dotnet build --configuration Release
-      
+
       - name: Test
         run: dotnet test --configuration Release --no-build
 
       - name: Pack
-        run: dotnet pack --configuration Release --no-restore --output ./nupkg /p:PackageVersion=${{ steps.determine_version.outputs.version }}
+        run: dotnet pack --configuration Release --no-restore /p:PackageVersion=${{ inputs.version }} --output ./nupkg
 
       - name: Publish to GitHub Packages
-        run: dotnet nuget push ./nupkg/*.${{ steps.determine_version.outputs.version }}.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
+        run: dotnet nuget push ./nupkg/*.${{ inputs.version }}.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
