@@ -11,10 +11,6 @@ on:
         description: 'NuGet source URL for publishing the package'
         required: true
         type: string
-      version:
-        description: 'The static version to use for the package'
-        required: true
-        type: string
     secrets:
       token:
         description: 'GitHub token for authentication'
@@ -34,6 +30,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Get Version from Tag
+        id: get_version
+        run: |
+          TAG=$(git describe --tags --abbrev=0)
+          echo "tag=${TAG#v}" >> $GITHUB_ENV
+
       - name: Build
         run: dotnet build --configuration Release
 
@@ -41,7 +43,7 @@ jobs:
         run: dotnet test --configuration Release --no-build
 
       - name: Pack
-        run: dotnet pack --configuration Release --no-restore /p:PackageVersion=${{ inputs.version }} --output ./nupkg
+        run: dotnet pack --configuration Release --no-restore /p:PackageVersion=${{ env.tag }} --output ./nupkg
 
       - name: Publish to GitHub Packages
-        run: dotnet nuget push ./nupkg/*.${{ inputs.version }}.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
+        run: dotnet nuget push ./nupkg/*.${{ env.tag }}.nupkg --source ${{ inputs.package-source }} --api-key ${{ secrets.token }}
