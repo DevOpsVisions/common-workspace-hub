@@ -14,6 +14,7 @@ Covers the key environments and platforms that support the **Elmentor Program**,
 - WordPress
 - Question-to-Answer Platform
 - GitHub Private Repositories
+- MS SQL Database on Azure
 
 ## **3. Member Registration Process**
 Describes the **end-to-end registration process**, covering:
