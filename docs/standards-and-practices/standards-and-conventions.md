@@ -34,6 +34,20 @@ A well-structured naming convention for Azure resources is crucial for quickly i
 
 More info: [Microsoft Azure Docs](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
 
+## **GitHub Organization and Project Naming Conventions**  
+
+To ensure consistency and clarity across all Organization and Projects, we adopt the following naming conventions:  
+
+### **GitHub Organization Name**  
+- **URL Format**: `https://github.com/DevOpsVisions` (PascalCase)  
+- **Display Name**: `DevOps Visions` (Pascal with spaces)  
+
+### **GitHub Project Name**  
+The GitHub Project Name should be the same as the repository name but formatted in **Pascal Case with spaces** for readability and branding.
+
+- **Example**: `Azure Automation Toolkit`  
+- The corresponding repository URL would be: `https://github.com/DevOpsVisions/azure-automation-toolkit`
+
 ## Repository Folder Structure
 
 The following is the folder structure used within the repository to maintain a clear and organized layout:
